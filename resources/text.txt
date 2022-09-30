@@ -8,7 +8,7 @@ Ai sensi dell art 182 comma 6 bis del D.Lgs. 31 febbraio 2006, n. 152 'Norme in 
 nei periodi di massimo rischio per gli incendi boschivi dichiarati dalle regioni; la combustione
 di residui vegetali, agricoli e forestali e' sempre vietata. Ai sensi dell'art.12 della
 L.r. 3 dicembre 1982, n.85 e successive modificazioni sino a cesssazione dello stato di eccezionale
-pericolosità e' vietato all'interno delle zone boscate e ad una distanza inferiore a m 50 da esse,
+pericolosita' e' vietato all'interno delle zone boscate e ad una distanza inferiore a m 50 da esse,
 ovvero dagli incolti ad esse limitrofi sino a cessazione dello stato di eccezionale pericolosita':
 a) far brillare mine senza la prevetiva autorizzazione da parte del Comando Stazione del Corpo Forestale
 giurisdizionalmente competente; usare apparecchi a fiamma o elettrici che producano rumori molesti;
@@ -16,7 +16,7 @@ b) usare motori sprovvisti di scarico di sicurezza, nonche' fornelli o incenerit
 favilla o brace; c) transitare con mezzi di trasporto dotati di motore a scoppio,su strade
 di carattere agricolo o forestale entro le zone boscate, fatta eccezione per coloro che abbiano diritto
 d'accendervi in quanto proprietari, usufruttuari o conduttori di fondo e loro familiari e ospiti,
-nella zona servita dalla strada, benche' abbiano necessità di accedervi per ragioni di abitazione
+nella zona servita dalla strada, benche' abbiano necessita' di accedervi per ragioni di abitazione
 o dimora o lavoro o servizio; d) eliminare col fuoco i residui vegetali delle scarpate stradali,
 ferroviarie e d'altro genere, fumare nei boschi o compiere ogni altra operazione che possa comunque pericolo
 mediato o immediato di incendio. Si fa altresi' presente che tutte le accensioni che non sia espressamente

@@ -62,7 +62,7 @@ def calibration_fase():
                     once_counter += 1
                 cv2.imshow('Text', text_frame)
                 for i in range(len(calibration_text)):
-                    cv2.putText(text_frame, calibration_text[i].strip('\n'), (10, i*50+100), FONT, 0.7, (0, 0, 0), 1)
+                    cv2.putText(text_frame, calibration_text[i].strip('\n'), (10, i*50+100), FONT, 0.85, (0, 0, 0), 1)
                     
             if click_counter == 3:
                 if once_counter == 1:
