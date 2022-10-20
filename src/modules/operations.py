@@ -1,4 +1,5 @@
 import time
+import os
 
 def current_milli_time(starting_time):
     return round((time.time() - starting_time)* 1000)
@@ -17,17 +18,17 @@ def write_array_file(dataset, path):
 def save_dataset(dataset, path):
     file = open(path, "w")
 
-    if path == "data\gaze.txt":
+    if path == os.path.join("data", "gaze.txt"):
         for i in range(len(dataset)):
             file.write(str(dataset[i].get_gaze()) + " ")
             file.write(str(dataset[i].get_time()) + "\n")
         file.close()
-    elif path == "data\keys.txt":
+    elif path == os.path.join("data", "keys.txt"):
         for i in range(len(dataset)):
             file.write(str(dataset[i].get_key()) + " ")
             file.write(str(dataset[i].get_ms()) + "\n")
         file.close()
-    elif path == "data\\face.txt":
+    elif path == os.path.join("data", "face.txt"):
         for i in range(len(dataset)):
             file.write(str(dataset[i].get_right()) + " ")
             file.write(str(dataset[i].get_left()) + " ")
@@ -35,7 +36,7 @@ def save_dataset(dataset, path):
             file.write(str(dataset[i].get_down()) + " ")
             file.write(str(dataset[i].get_time()) + "\n")
         file.close()
-    elif path == "data\\face_all.txt":
+    elif path == os.path.join("data", "face_all.txt"):
         for i in range(len(dataset)):
             file.write(str(dataset[i].get_pixel()) + " ")
             file.write(str(dataset[i].get_time()) + "\n")

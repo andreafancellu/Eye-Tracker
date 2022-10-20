@@ -3,12 +3,13 @@ import cv2
 import numpy as np
 from .constants import *
 from .tracking import *
+import os
 
 
 def calibration_fase():
 
     calibration_text =[]
-    with open("resources\calibration.txt", "r") as file:
+    with open(os.path.join("resources", "calibration.txt"), "r") as file:
         calibration_text = file.readlines()
     file.close
 
@@ -20,7 +21,7 @@ def calibration_fase():
 
     # modelli per face detection
     detector = dlib.get_frontal_face_detector()
-    predictor = dlib.shape_predictor(r"resources\shape_predictor_68_face_landmarks.dat")
+    predictor = dlib.shape_predictor(os.path.join("resources", "shape_predictor_68_face_landmarks.dat"))
 
     # contatori per gestire l'andamento del testo durante la calibrazione
     click_counter = 0

@@ -8,13 +8,14 @@ from modules.tracking import *
 import dlib
 import cv2
 import numpy as np
+import os
 
 
 calibration_fase()
 
 # text user will read 
 text_list = []
-with open('resources/text.txt', 'r') as f:
+with open(os.path.join("resources", "text.txt"), 'r') as f:
     text_list = f.readlines()
 
 cap = cv2.VideoCapture(0)
@@ -33,7 +34,7 @@ click_counter = 0
 once_counter = 0
 
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor(r"resources\shape_predictor_68_face_landmarks.dat")
+predictor = dlib.shape_predictor(os.path.join("resources", "shape_predictor_68_face_landmarks.dat"))
 
 stopThread = False
 thread_audio = Thread(target=record_audio)
@@ -142,7 +143,7 @@ cap.release()
 cv2.destroyAllWindows()
 thread_audio.join()
 
-save_dataset(dataset_gaze, "data\gaze.txt")
-save_dataset(list(dict.fromkeys(dataset_keys)), "data\keys.txt")
-save_dataset(dataset_face, "data\\face.txt")
-save_dataset(dataset_face_all, "data\\face_all.txt")
+save_dataset(dataset_gaze, os.path.join("data", "gaze.txt"))
+save_dataset(list(dict.fromkeys(dataset_keys)), os.path.join("data", "keys.txt"))
+save_dataset(dataset_face, os.path.join("data", "face.txt"))
+save_dataset(dataset_face_all, os.path.join("data", "face_all.txt"))
