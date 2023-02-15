@@ -16,9 +16,3 @@ it's written in Python and the following libraries are needed to run it:
   * speechrecognition
 
 The use of a virtual environment is recommended to avoid conflicts with previously installed libraries
-  
-The code is organized as follows:
-
-  * main: run this file to execute the program
-  * classes: contains several classes to represent the data (face_data, gaze_data, key_data)
-  * modules: contains several modules that implements the functions used in the main
